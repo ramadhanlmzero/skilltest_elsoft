@@ -1,59 +1,182 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Skill Test Elsoft API
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Backend API berbasis Laravel 12 untuk kebutuhan autentikasi, master item, dan transaksi stock issue.
 
-## About Laravel
+## Teknologi
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- PHP 8.2+
+- Laravel 12
+- MySQL
+- Laravel Sanctum (Bearer Token)
+- Laravel Pint (code style)
+- Scribe (API documentation)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Fitur Utama
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Auth portal (signin/logout) dengan token Sanctum
+- Master Item (list, create, update, delete)
+- Stock Issue parent (list, create, get detail parent, update, delete)
+- Stock Issue detail (create, get detail, update, delete)
 
-## Learning Laravel
+## Quick Start
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+1. Clone repository.
+2. Install dependency backend dan frontend.
+3. Siapkan konfigurasi `.env`.
+4. Jalankan migration + seeder.
+5. Jalankan server.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Perintah cepat:
 
-## Laravel Sponsors
+```bash
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate:fresh --seed
+npm install
+php artisan serve
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-### Premium Partners
+## Konfigurasi Environment
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Sesuaikan konfigurasi database di `.env`:
 
-## Contributing
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=skilltest_elsoft
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Variabel tambahan yang dipakai project:
 
-## Code of Conduct
+- `TOKEN_EXPIRE_HOURS` (default: `3`, satuan jam)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Data Seeder Default
 
-## Security Vulnerabilities
+Seeder utama ada di `DatabaseSeeder` dan menjalankan:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- `CompanySeeder`
+- `RoleSeeder`
+- `UserSeeder`
+- `ItemMasterSeeder`
+- `StockIssueMasterSeeder`
 
-## License
+User default dari `UserSeeder`:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+1. Admin
+	- domain: `admin`
+	- username: `admin`
+	- password: `admin123`
+2. Testcase
+	- domain: `testcase`
+	- username: `testcase`
+	- password: `testcase123`
+
+## Autentikasi
+
+Autentikasi menggunakan Bearer Token (Sanctum).
+
+1. Login ke endpoint signin.
+2. Ambil token dari response signin.
+3. Kirim header berikut pada endpoint yang diproteksi:
+
+```http
+Authorization: Bearer <token>
+Accept: application/json
+```
+
+## Struktur Endpoint
+
+Base route didefinisikan di `routes/api.php`:
+
+- `portal/api/*` untuk auth
+- `admin/api/*` untuk modul admin
+
+### Auth
+
+- `POST /portal/api/auth/signin`
+- `POST /portal/api/auth/logout` (auth:sanctum)
+
+### Item
+
+- `GET /admin/api/item/list`
+- `POST /admin/api/item`
+- `POST /admin/api/item/save`
+- `DELETE /admin/api/item/delete`
+
+### Stock Issue (Parent)
+
+- `GET /admin/api/v1/stockissue/list`
+- `POST /admin/api/v1/stockissue`
+- `GET /admin/api/v1/stockissue/{oid}`
+- `POST /admin/api/v1/stockissue/{oid}`
+- `DELETE /admin/api/v1/stockissue/{oid}`
+
+### Stock Issue Detail
+
+- `POST /admin/api/v1/stockissue/detail`
+- `GET /admin/api/v1/stockissue/detail/{oid}`
+- `POST /admin/api/v1/stockissue/detail/{oid}`
+- `DELETE /admin/api/v1/stockissue/detail/{oid}`
+
+## Dokumentasi API (Scribe)
+
+Generate dokumentasi:
+
+```bash
+php artisan scribe:generate
+```
+
+Karena konfigurasi Scribe menggunakan mode `laravel`, docs bisa diakses di:
+
+- `/docs`
+- `/docs.postman`
+- `/docs.openapi`
+
+## Quality Checks
+
+Format code:
+
+```bash
+php vendor/bin/pint
+```
+
+Jalankan test:
+
+```bash
+php artisan test
+```
+
+## Unit Test yang Tersedia
+
+Test otomatis API tersedia di folder `tests/Feature`:
+
+- `AuthApiTest.php`
+	- signin
+	- logout
+- `ItemApiTest.php`
+	- list item
+	- create item
+	- update item
+	- delete item
+- `StockIssueApiTest.php`
+	- list/create/get/update/delete stock issue parent
+	- create/get/update/delete stock issue detail
+
+Menjalankan test per file:
+
+```bash
+php artisan test tests/Feature/AuthApiTest.php
+php artisan test tests/Feature/ItemApiTest.php
+php artisan test tests/Feature/StockIssueApiTest.php
+```
+
+## Catatan Implementasi
+
+- ID utama menggunakan UUID.
+- Penulisan response distandarkan lewat helper `ResponseHelper`.
+- Arsitektur mengikuti pola Controller -> Service -> Repository.
