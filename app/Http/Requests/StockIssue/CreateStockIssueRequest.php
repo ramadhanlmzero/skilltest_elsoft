@@ -3,7 +3,6 @@
 namespace App\Http\Requests\StockIssue;
 
 use App\Models\AccountModel;
-use App\Models\CompanyModel;
 use Closure;
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
@@ -22,16 +21,17 @@ class CreateStockIssueRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'Company' => ['required', 'uuid', Rule::exists(CompanyModel::class, 'id')],
             'Date' => ['required', 'date_format:Y-m-d'],
             'Account' => [
                 'required',
                 'uuid',
                 Rule::exists(AccountModel::class, 'id'),
                 function (string $attribute, mixed $value, Closure $fail): void {
-                    $companyId = (string) $this->input('Company');
+                    $companyId = (string) ($this->user()?->company_id ?? '');
 
                     if ($companyId === '') {
+                        $fail('Company user not found.');
+
                         return;
                     }
 
@@ -52,7 +52,6 @@ class CreateStockIssueRequest extends FormRequest
     public function attributes(): array
     {
         return [
-            'Company' => 'Company',
             'Date' => 'Date',
             'Account' => 'Account',
             'Note' => 'Note',

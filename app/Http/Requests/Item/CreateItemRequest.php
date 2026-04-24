@@ -2,7 +2,6 @@
 
 namespace App\Http\Requests\Item;
 
-use App\Models\CompanyModel;
 use App\Models\ItemAccountGroupModel;
 use App\Models\ItemGroupModel;
 use App\Models\ItemTypeModel;
@@ -24,7 +23,6 @@ class CreateItemRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'Company' => ['required', 'uuid', Rule::exists(CompanyModel::class, 'id')],
             'ItemType' => ['required', 'uuid', Rule::exists(ItemTypeModel::class, 'id')],
             'Label' => ['required', 'string', 'max:255'],
             'ItemGroup' => ['required', 'uuid', Rule::exists(ItemGroupModel::class, 'id')],
@@ -37,7 +35,6 @@ class CreateItemRequest extends FormRequest
     public function attributes(): array
     {
         return [
-            'Company' => 'Company',
             'ItemType' => 'Item Type',
             'Code' => 'Code',
             'Label' => 'Title',

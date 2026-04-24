@@ -501,7 +501,7 @@
 
         </div>
         <div class="sl-flex sl-items-center sl-px-4 sl-py-3 sl-border-t">
-            Last updated: April 23, 2026
+            Last updated: April 24, 2026
         </div>
 
         <div class="sl-flex sl-items-center sl-px-4 sl-py-3 sl-border-t">
@@ -1760,7 +1760,7 @@ content-type: application/json</code></pre>
     <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
         <div class="sl-flex sl-items-center sl-max-w-full">
                                         <div class="sl-flex sl-items-baseline sl-text-base">
-                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Company</div>
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">ItemType</div>
                                             <span class="sl-truncate sl-text-muted">string</span>
                                     </div>
                                             <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
@@ -1769,7 +1769,556 @@ content-type: application/json</code></pre>
                                                                                 </div>
                                         </div>
                 <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
-            <p>Must be a valid UUID. The <code>id</code> of an existing record in the companies table.</p>
+            <p>Must be a valid UUID. The <code>id</code> of an existing record in the item_types table.</p>
+        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        66529e01-d113-3473-8d6f-9e11e09332ea
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+
+            </div>
+    <div class="expandable sl-text-sm sl-border-l sl-ml-px">
+        <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Label</div>
+                                            <span class="sl-truncate sl-text-muted">string</span>
+                                    </div>
+                                            <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
+                        <div class="sl-flex sl-items-center">
+                                                            <span class="sl-ml-2 sl-text-warning">required</span>
+                                                                                </div>
+                                        </div>
+                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
+            <p>Must not be greater than 255 characters.</p>
+        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        qeopfuudtdsufvyvddqam
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+
+            </div>
+    <div class="expandable sl-text-sm sl-border-l sl-ml-px">
+        <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">ItemGroup</div>
+                                            <span class="sl-truncate sl-text-muted">string</span>
+                                    </div>
+                                            <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
+                        <div class="sl-flex sl-items-center">
+                                                            <span class="sl-ml-2 sl-text-warning">required</span>
+                                                                                </div>
+                                        </div>
+                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
+            <p>Must be a valid UUID. The <code>id</code> of an existing record in the item_groups table.</p>
+        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        1915c795-5d1c-3def-965b-5abe034dd150
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+
+            </div>
+    <div class="expandable sl-text-sm sl-border-l sl-ml-px">
+        <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">ItemAccountGroup</div>
+                                            <span class="sl-truncate sl-text-muted">string</span>
+                                    </div>
+                                            <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
+                        <div class="sl-flex sl-items-center">
+                                                            <span class="sl-ml-2 sl-text-warning">required</span>
+                                                                                </div>
+                                        </div>
+                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
+            <p>Must be a valid UUID. The <code>id</code> of an existing record in the item_account_groups table.</p>
+        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        d63469cd-6701-3555-a16b-fc9764100c9a
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+
+            </div>
+    <div class="expandable sl-text-sm sl-border-l sl-ml-px">
+        <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">ItemUnit</div>
+                                            <span class="sl-truncate sl-text-muted">string</span>
+                                    </div>
+                                            <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
+                        <div class="sl-flex sl-items-center">
+                                                            <span class="sl-ml-2 sl-text-warning">required</span>
+                                                                                </div>
+                                        </div>
+                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
+            <p>Must be a valid UUID. The <code>id</code> of an existing record in the item_units table.</p>
+        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        957dba86-4fef-3375-bedd-10e12a33d85e
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+
+            </div>
+    <div class="expandable sl-text-sm sl-border-l sl-ml-px">
+        <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">IsActive</div>
+                                            <span class="sl-truncate sl-text-muted">boolean</span>
+                                    </div>
+                                            <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
+                        <div class="sl-flex sl-items-center">
+                                                            <span class="sl-ml-2 sl-text-warning">required</span>
+                                                                                </div>
+                                        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        true
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+
+            </div>
+                            </div>
+                        </div>
+                    
+                                    </div>
+            </div>
+        </div>
+
+        <div data-testid="two-column-right" class="sl-relative sl-w-2/5 sl-ml-16" style="max-width: 500px;">
+            <div class="sl-stack sl-stack--vertical sl-stack--6 sl-flex sl-flex-col sl-items-stretch">
+
+                                    <div class="sl-inverted">
+    <div class="sl-overflow-y-hidden sl-rounded-lg">
+        <form class="TryItPanel sl-bg-canvas-100 sl-rounded-lg"
+              data-method="POST"
+              data-path="admin/api/item"
+              data-hasfiles="0"
+              data-hasjsonbody="1">
+                            <div class="sl-panel sl-outline-none sl-w-full expandable">
+                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
+                         role="button">
+                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                     data-icon="caret-down"
+                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path fill="currentColor"
+                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
+                                </svg>
+                            </div>
+                            Auth
+                        </div>
+                    </div>
+                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
+                        <div class="ParameterGrid sl-p-4">
+                            <label aria-hidden="true"
+                                   for="auth-POSTadmin-api-item">Authorization</label>
+                            <span class="sl-mx-3">:</span>
+                            <div class="sl-flex sl-flex-1">
+                                <div class="sl-input sl-flex-1 sl-relative">
+                                    <code>Bearer </code>
+                                    <input aria-label="Authorization"
+                                           id="auth-POSTadmin-api-item"
+                                           data-component="header"
+                                           data-prefix="Bearer "
+                                           name="Authorization"
+                                           placeholder="{YOUR_AUTH_KEY}"
+                                           class="auth-value sl-relative sl-w-3/5 sl-h-md sl-text-base sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                            <div class="sl-panel sl-outline-none sl-w-full expandable">
+                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
+                         role="button">
+                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                     data-icon="caret-down"
+                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path fill="currentColor"
+                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
+                                </svg>
+                            </div>
+                            Headers
+                        </div>
+                    </div>
+                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
+                        <div class="ParameterGrid sl-p-4">
+                                                                                                                            <label aria-hidden="true"
+                                       for="header-POSTadmin-api-item-Content-Type">Content-Type</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="Content-Type" name="Content-Type"
+                                               id="header-POSTadmin-api-item-Content-Type"
+                                               value="application/json" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                                                            <label aria-hidden="true"
+                                       for="header-POSTadmin-api-item-Accept">Accept</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="Accept" name="Accept"
+                                               id="header-POSTadmin-api-item-Accept"
+                                               value="application/json" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+            
+            
+            
+                            <div class="sl-panel sl-outline-none sl-w-full expandable">
+                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
+                         role="button">
+                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                     data-icon="caret-down"
+                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path fill="currentColor"
+                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
+                                </svg>
+                            </div>
+                            Body
+                        </div>
+                    </div>
+                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
+                                                    <div class="TextRequestBody sl-p-4">
+                                <div class="code-editor language-json"
+                                     id="json-body-POSTadmin-api-item"
+                                     style="font-family: var(--font-code); font-size: 12px; line-height: var(--lh-code);"
+                                >{
+    "ItemType": "66529e01-d113-3473-8d6f-9e11e09332ea",
+    "Label": "qeopfuudtdsufvyvddqam",
+    "ItemGroup": "1915c795-5d1c-3def-965b-5abe034dd150",
+    "ItemAccountGroup": "d63469cd-6701-3555-a16b-fc9764100c9a",
+    "ItemUnit": "957dba86-4fef-3375-bedd-10e12a33d85e",
+    "IsActive": true
+}</div>
+                            </div>
+                                            </div>
+                </div>
+            
+            <div class="SendButtonHolder sl-mt-4 sl-p-4 sl-pt-0">
+                <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-center">
+                    <button type="button" data-endpoint="POSTadmin-api-item"
+                            class="tryItOut-btn sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-bg-primary hover:sl-bg-primary-dark active:sl-bg-primary-darker disabled:sl-bg-canvas-100 sl-text-on-primary disabled:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70"
+                    >
+                        Send Request 💥
+                    </button>
+                </div>
+            </div>
+
+            <div data-endpoint="POSTadmin-api-item"
+                 class="tryItOut-error expandable sl-panel sl-outline-none sl-w-full" hidden>
+                <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
+                     role="button">
+                    <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                        <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                 data-icon="caret-down"
+                                 class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
+                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path fill="currentColor"
+                                      d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
+                            </svg>
+                        </div>
+                        Request failed with error
+                    </div>
+                </div>
+                <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
+                    <div class="sl-panel__content sl-p-4">
+                        <p class="sl-pb-2"><strong class="error-message"></strong></p>
+                        <p class="sl-pb-2">Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</p>
+                    </div>
+                </div>
+            </div>
+
+                <div data-endpoint="POSTadmin-api-item"
+                     class="tryItOut-response expandable sl-panel sl-outline-none sl-w-full" hidden>
+                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
+                         role="button">
+                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                     data-icon="caret-down"
+                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path fill="currentColor"
+                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
+                                </svg>
+                            </div>
+                            Received response
+                        </div>
+                    </div>
+                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
+                        <div class="sl-panel__content sl-p-4">
+                            <p class="sl-pb-2 response-status"></p>
+                            <pre><code class="sl-pb-2 response-content language-json"
+                                       data-empty-response-text="<Empty response>"
+                                       style="max-height: 300px;"></code></pre>
+                        </div>
+                    </div>
+                </div>
+        </form>
+    </div>
+</div>
+                
+                                            <div class="sl-panel sl-outline-none sl-w-full sl-rounded-lg">
+                            <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-3 sl-pl-4 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-select-none">
+                                <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                                    <div class="sl--ml-2">
+                                        Example request:
+                                        <select class="example-request-lang-toggle sl-text-base"
+                                                aria-label="Request Sample Language"
+                                                onchange="switchExampleLanguage(event.target.value);">
+                                                                                            <option>bash</option>
+                                                                                            <option>javascript</option>
+                                                                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+                                                            <div class="sl-bg-canvas-100 example-request example-request-bash"
+                                     style="">
+                                    <div class="sl-px-0 sl-py-1">
+                                        <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
+                                            <pre><code class="language-bash">curl --request POST \
+    "http://127.0.0.1:8000/admin/api/item" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"ItemType\": \"66529e01-d113-3473-8d6f-9e11e09332ea\",
+    \"Label\": \"qeopfuudtdsufvyvddqam\",
+    \"ItemGroup\": \"1915c795-5d1c-3def-965b-5abe034dd150\",
+    \"ItemAccountGroup\": \"d63469cd-6701-3555-a16b-fc9764100c9a\",
+    \"ItemUnit\": \"957dba86-4fef-3375-bedd-10e12a33d85e\",
+    \"IsActive\": true
+}"
+</code></pre>                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="sl-bg-canvas-100 example-request example-request-javascript"
+                                     style="display: none;">
+                                    <div class="sl-px-0 sl-py-1">
+                                        <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
+                                            <pre><code class="language-javascript">const url = new URL(
+    "http://127.0.0.1:8000/admin/api/item"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "ItemType": "66529e01-d113-3473-8d6f-9e11e09332ea",
+    "Label": "qeopfuudtdsufvyvddqam",
+    "ItemGroup": "1915c795-5d1c-3def-965b-5abe034dd150",
+    "ItemAccountGroup": "d63469cd-6701-3555-a16b-fc9764100c9a",
+    "ItemUnit": "957dba86-4fef-3375-bedd-10e12a33d85e",
+    "IsActive": true
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre>                                        </div>
+                                    </div>
+                                </div>
+                                                    </div>
+                    
+                            </div>
+    </div>
+</div>
+
+                    <div class="sl-stack sl-stack--vertical sl-stack--8 HttpOperation sl-flex sl-flex-col sl-items-stretch sl-w-full">
+    <div class="sl-stack sl-stack--vertical sl-stack--5 sl-flex sl-flex-col sl-items-stretch">
+        <div class="sl-relative">
+            <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
+                <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
+                    id="endpoints-POSTadmin-api-item-save">
+                    POST admin/api/item/save
+                </h2>
+            </div>
+        </div>
+
+        <div class="sl-relative">
+            <div title="http://127.0.0.1:8000/admin/api/item/save"
+                     class="sl-stack sl-stack--horizontal sl-stack--3 sl-inline-flex sl-flex-row sl-items-center sl-max-w-full sl-font-mono sl-py-2 sl-pr-4 sl-bg-canvas-50 sl-rounded-lg"
+                >
+                                            <div class="sl-text-lg sl-font-semibold sl-px-2.5 sl-py-1 sl-text-on-primary sl-rounded-lg"
+                             style="background-color: black;"
+                        >
+                            POST
+                        </div>
+                                        <div class="sl-flex sl-overflow-x-hidden sl-text-lg sl-select-all">
+                        <div dir="rtl"
+                             class="sl-overflow-x-hidden sl-truncate sl-text-muted">http://127.0.0.1:8000</div>
+                        <div class="sl-flex-1 sl-font-semibold">/admin/api/item/save</div>
+                    </div>
+
+                                                    <div class="sl-font-prose sl-font-semibold sl-px-1.5 sl-py-0.5 sl-text-on-primary sl-rounded-lg"
+                                 style="background-color: darkred"
+                            >requires authentication
+                            </div>
+                                                                                    </div>
+        </div>
+
+        
+    </div>
+    <div class="sl-flex">
+        <div data-testid="two-column-left" class="sl-flex-1 sl-w-0">
+            <div class="sl-stack sl-stack--vertical sl-stack--10 sl-flex sl-flex-col sl-items-stretch">
+                <div class="sl-stack sl-stack--vertical sl-stack--8 sl-flex sl-flex-col sl-items-stretch">
+                                            <div class="sl-stack sl-stack--vertical sl-stack--5 sl-flex sl-flex-col sl-items-stretch">
+                            <h3 class="sl-text-2xl sl-leading-snug sl-font-prose">
+                                Headers
+                            </h3>
+                            <div class="sl-text-sm">
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Authorization</div>
+                                    </div>
+                                        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        Bearer {YOUR_AUTH_KEY}
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Content-Type</div>
+                                    </div>
+                                        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        application/json
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Accept</div>
+                                    </div>
+                                        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        application/json
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                            </div>
+                        </div>
+                    
+                    
+
+                    
+                                            <div class="sl-stack sl-stack--vertical sl-stack--6 sl-flex sl-flex-col sl-items-stretch">
+                            <h3 class="sl-text-2xl sl-leading-snug sl-font-prose">Body Parameters</h3>
+
+                                <div class="sl-text-sm">
+                                    <div class="expandable sl-text-sm sl-border-l sl-ml-px">
+        <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Oid</div>
+                                            <span class="sl-truncate sl-text-muted">string</span>
+                                    </div>
+                                            <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
+                        <div class="sl-flex sl-items-center">
+                                                            <span class="sl-ml-2 sl-text-warning">required</span>
+                                                                                </div>
+                                        </div>
+                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
+            <p>Must be a valid UUID. The <code>id</code> of an existing record in the items table.</p>
         </div>
                                             <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
                 <span>Example:</span> <!-- <span> important for spacing -->
@@ -1946,616 +2495,6 @@ content-type: application/json</code></pre>
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        false
-                    </div>
-                </div>
-            </div>
-            </div>
-</div>
-
-            </div>
-                            </div>
-                        </div>
-                    
-                                    </div>
-            </div>
-        </div>
-
-        <div data-testid="two-column-right" class="sl-relative sl-w-2/5 sl-ml-16" style="max-width: 500px;">
-            <div class="sl-stack sl-stack--vertical sl-stack--6 sl-flex sl-flex-col sl-items-stretch">
-
-                                    <div class="sl-inverted">
-    <div class="sl-overflow-y-hidden sl-rounded-lg">
-        <form class="TryItPanel sl-bg-canvas-100 sl-rounded-lg"
-              data-method="POST"
-              data-path="admin/api/item"
-              data-hasfiles="0"
-              data-hasjsonbody="1">
-                            <div class="sl-panel sl-outline-none sl-w-full expandable">
-                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
-                         role="button">
-                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
-                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                     data-icon="caret-down"
-                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
-                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path fill="currentColor"
-                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
-                                </svg>
-                            </div>
-                            Auth
-                        </div>
-                    </div>
-                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
-                        <div class="ParameterGrid sl-p-4">
-                            <label aria-hidden="true"
-                                   for="auth-POSTadmin-api-item">Authorization</label>
-                            <span class="sl-mx-3">:</span>
-                            <div class="sl-flex sl-flex-1">
-                                <div class="sl-input sl-flex-1 sl-relative">
-                                    <code>Bearer </code>
-                                    <input aria-label="Authorization"
-                                           id="auth-POSTadmin-api-item"
-                                           data-component="header"
-                                           data-prefix="Bearer "
-                                           name="Authorization"
-                                           placeholder="{YOUR_AUTH_KEY}"
-                                           class="auth-value sl-relative sl-w-3/5 sl-h-md sl-text-base sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                            <div class="sl-panel sl-outline-none sl-w-full expandable">
-                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
-                         role="button">
-                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
-                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                     data-icon="caret-down"
-                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
-                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path fill="currentColor"
-                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
-                                </svg>
-                            </div>
-                            Headers
-                        </div>
-                    </div>
-                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
-                        <div class="ParameterGrid sl-p-4">
-                                                                                                                            <label aria-hidden="true"
-                                       for="header-POSTadmin-api-item-Content-Type">Content-Type</label>
-                                <span class="sl-mx-3">:</span>
-                                <div class="sl-flex sl-flex-1">
-                                    <div class="sl-input sl-flex-1 sl-relative">
-                                        <input aria-label="Content-Type" name="Content-Type"
-                                               id="header-POSTadmin-api-item-Content-Type"
-                                               value="application/json" data-component="header"
-                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
-                                    </div>
-                                </div>
-                                                                                            <label aria-hidden="true"
-                                       for="header-POSTadmin-api-item-Accept">Accept</label>
-                                <span class="sl-mx-3">:</span>
-                                <div class="sl-flex sl-flex-1">
-                                    <div class="sl-input sl-flex-1 sl-relative">
-                                        <input aria-label="Accept" name="Accept"
-                                               id="header-POSTadmin-api-item-Accept"
-                                               value="application/json" data-component="header"
-                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
-                                    </div>
-                                </div>
-                                                    </div>
-                    </div>
-                </div>
-            
-            
-            
-                            <div class="sl-panel sl-outline-none sl-w-full expandable">
-                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
-                         role="button">
-                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
-                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                     data-icon="caret-down"
-                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
-                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path fill="currentColor"
-                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
-                                </svg>
-                            </div>
-                            Body
-                        </div>
-                    </div>
-                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
-                                                    <div class="TextRequestBody sl-p-4">
-                                <div class="code-editor language-json"
-                                     id="json-body-POSTadmin-api-item"
-                                     style="font-family: var(--font-code); font-size: 12px; line-height: var(--lh-code);"
-                                >{
-    "Company": "66529e01-d113-3473-8d6f-9e11e09332ea",
-    "ItemType": "fa010f60-df29-3f05-8bc7-bed48f550d13",
-    "Label": "opfuudtdsufvyvddqamni",
-    "ItemGroup": "d63469cd-6701-3555-a16b-fc9764100c9a",
-    "ItemAccountGroup": "957dba86-4fef-3375-bedd-10e12a33d85e",
-    "ItemUnit": "5d4370ba-0848-31e1-880d-fcbc1539481f",
-    "IsActive": false
-}</div>
-                            </div>
-                                            </div>
-                </div>
-            
-            <div class="SendButtonHolder sl-mt-4 sl-p-4 sl-pt-0">
-                <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-center">
-                    <button type="button" data-endpoint="POSTadmin-api-item"
-                            class="tryItOut-btn sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-bg-primary hover:sl-bg-primary-dark active:sl-bg-primary-darker disabled:sl-bg-canvas-100 sl-text-on-primary disabled:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70"
-                    >
-                        Send Request 💥
-                    </button>
-                </div>
-            </div>
-
-            <div data-endpoint="POSTadmin-api-item"
-                 class="tryItOut-error expandable sl-panel sl-outline-none sl-w-full" hidden>
-                <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
-                     role="button">
-                    <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
-                        <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                 data-icon="caret-down"
-                                 class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
-                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                <path fill="currentColor"
-                                      d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
-                            </svg>
-                        </div>
-                        Request failed with error
-                    </div>
-                </div>
-                <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
-                    <div class="sl-panel__content sl-p-4">
-                        <p class="sl-pb-2"><strong class="error-message"></strong></p>
-                        <p class="sl-pb-2">Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</p>
-                    </div>
-                </div>
-            </div>
-
-                <div data-endpoint="POSTadmin-api-item"
-                     class="tryItOut-response expandable sl-panel sl-outline-none sl-w-full" hidden>
-                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
-                         role="button">
-                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
-                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                     data-icon="caret-down"
-                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
-                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path fill="currentColor"
-                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
-                                </svg>
-                            </div>
-                            Received response
-                        </div>
-                    </div>
-                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
-                        <div class="sl-panel__content sl-p-4">
-                            <p class="sl-pb-2 response-status"></p>
-                            <pre><code class="sl-pb-2 response-content language-json"
-                                       data-empty-response-text="<Empty response>"
-                                       style="max-height: 300px;"></code></pre>
-                        </div>
-                    </div>
-                </div>
-        </form>
-    </div>
-</div>
-                
-                                            <div class="sl-panel sl-outline-none sl-w-full sl-rounded-lg">
-                            <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-3 sl-pl-4 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-select-none">
-                                <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
-                                    <div class="sl--ml-2">
-                                        Example request:
-                                        <select class="example-request-lang-toggle sl-text-base"
-                                                aria-label="Request Sample Language"
-                                                onchange="switchExampleLanguage(event.target.value);">
-                                                                                            <option>bash</option>
-                                                                                            <option>javascript</option>
-                                                                                    </select>
-                                    </div>
-                                </div>
-                            </div>
-                                                            <div class="sl-bg-canvas-100 example-request example-request-bash"
-                                     style="">
-                                    <div class="sl-px-0 sl-py-1">
-                                        <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
-                                            <pre><code class="language-bash">curl --request POST \
-    "http://127.0.0.1:8000/admin/api/item" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json" \
-    --data "{
-    \"Company\": \"66529e01-d113-3473-8d6f-9e11e09332ea\",
-    \"ItemType\": \"fa010f60-df29-3f05-8bc7-bed48f550d13\",
-    \"Label\": \"opfuudtdsufvyvddqamni\",
-    \"ItemGroup\": \"d63469cd-6701-3555-a16b-fc9764100c9a\",
-    \"ItemAccountGroup\": \"957dba86-4fef-3375-bedd-10e12a33d85e\",
-    \"ItemUnit\": \"5d4370ba-0848-31e1-880d-fcbc1539481f\",
-    \"IsActive\": false
-}"
-</code></pre>                                        </div>
-                                    </div>
-                                </div>
-                                                            <div class="sl-bg-canvas-100 example-request example-request-javascript"
-                                     style="display: none;">
-                                    <div class="sl-px-0 sl-py-1">
-                                        <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
-                                            <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/admin/api/item"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-let body = {
-    "Company": "66529e01-d113-3473-8d6f-9e11e09332ea",
-    "ItemType": "fa010f60-df29-3f05-8bc7-bed48f550d13",
-    "Label": "opfuudtdsufvyvddqamni",
-    "ItemGroup": "d63469cd-6701-3555-a16b-fc9764100c9a",
-    "ItemAccountGroup": "957dba86-4fef-3375-bedd-10e12a33d85e",
-    "ItemUnit": "5d4370ba-0848-31e1-880d-fcbc1539481f",
-    "IsActive": false
-};
-
-fetch(url, {
-    method: "POST",
-    headers,
-    body: JSON.stringify(body),
-}).then(response =&gt; response.json());</code></pre>                                        </div>
-                                    </div>
-                                </div>
-                                                    </div>
-                    
-                            </div>
-    </div>
-</div>
-
-                    <div class="sl-stack sl-stack--vertical sl-stack--8 HttpOperation sl-flex sl-flex-col sl-items-stretch sl-w-full">
-    <div class="sl-stack sl-stack--vertical sl-stack--5 sl-flex sl-flex-col sl-items-stretch">
-        <div class="sl-relative">
-            <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
-                <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
-                    id="endpoints-POSTadmin-api-item-save">
-                    POST admin/api/item/save
-                </h2>
-            </div>
-        </div>
-
-        <div class="sl-relative">
-            <div title="http://127.0.0.1:8000/admin/api/item/save"
-                     class="sl-stack sl-stack--horizontal sl-stack--3 sl-inline-flex sl-flex-row sl-items-center sl-max-w-full sl-font-mono sl-py-2 sl-pr-4 sl-bg-canvas-50 sl-rounded-lg"
-                >
-                                            <div class="sl-text-lg sl-font-semibold sl-px-2.5 sl-py-1 sl-text-on-primary sl-rounded-lg"
-                             style="background-color: black;"
-                        >
-                            POST
-                        </div>
-                                        <div class="sl-flex sl-overflow-x-hidden sl-text-lg sl-select-all">
-                        <div dir="rtl"
-                             class="sl-overflow-x-hidden sl-truncate sl-text-muted">http://127.0.0.1:8000</div>
-                        <div class="sl-flex-1 sl-font-semibold">/admin/api/item/save</div>
-                    </div>
-
-                                                    <div class="sl-font-prose sl-font-semibold sl-px-1.5 sl-py-0.5 sl-text-on-primary sl-rounded-lg"
-                                 style="background-color: darkred"
-                            >requires authentication
-                            </div>
-                                                                                    </div>
-        </div>
-
-        
-    </div>
-    <div class="sl-flex">
-        <div data-testid="two-column-left" class="sl-flex-1 sl-w-0">
-            <div class="sl-stack sl-stack--vertical sl-stack--10 sl-flex sl-flex-col sl-items-stretch">
-                <div class="sl-stack sl-stack--vertical sl-stack--8 sl-flex sl-flex-col sl-items-stretch">
-                                            <div class="sl-stack sl-stack--vertical sl-stack--5 sl-flex sl-flex-col sl-items-stretch">
-                            <h3 class="sl-text-2xl sl-leading-snug sl-font-prose">
-                                Headers
-                            </h3>
-                            <div class="sl-text-sm">
-                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
-    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
-    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
-        <div class="sl-flex sl-items-center sl-max-w-full">
-                                        <div class="sl-flex sl-items-baseline sl-text-base">
-                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Authorization</div>
-                                    </div>
-                                        </div>
-                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
-                <span>Example:</span> <!-- <span> important for spacing -->
-                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
-                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        Bearer {YOUR_AUTH_KEY}
-                    </div>
-                </div>
-            </div>
-            </div>
-</div>
-                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
-    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
-    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
-        <div class="sl-flex sl-items-center sl-max-w-full">
-                                        <div class="sl-flex sl-items-baseline sl-text-base">
-                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Content-Type</div>
-                                    </div>
-                                        </div>
-                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
-                <span>Example:</span> <!-- <span> important for spacing -->
-                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
-                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        application/json
-                    </div>
-                </div>
-            </div>
-            </div>
-</div>
-                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
-    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
-    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
-        <div class="sl-flex sl-items-center sl-max-w-full">
-                                        <div class="sl-flex sl-items-baseline sl-text-base">
-                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Accept</div>
-                                    </div>
-                                        </div>
-                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
-                <span>Example:</span> <!-- <span> important for spacing -->
-                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
-                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        application/json
-                    </div>
-                </div>
-            </div>
-            </div>
-</div>
-                                                            </div>
-                        </div>
-                    
-                    
-
-                    
-                                            <div class="sl-stack sl-stack--vertical sl-stack--6 sl-flex sl-flex-col sl-items-stretch">
-                            <h3 class="sl-text-2xl sl-leading-snug sl-font-prose">Body Parameters</h3>
-
-                                <div class="sl-text-sm">
-                                    <div class="expandable sl-text-sm sl-border-l sl-ml-px">
-        <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
-    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
-    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
-        <div class="sl-flex sl-items-center sl-max-w-full">
-                                        <div class="sl-flex sl-items-baseline sl-text-base">
-                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Oid</div>
-                                            <span class="sl-truncate sl-text-muted">string</span>
-                                    </div>
-                                            <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
-                        <div class="sl-flex sl-items-center">
-                                                            <span class="sl-ml-2 sl-text-warning">required</span>
-                                                                                </div>
-                                        </div>
-                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
-            <p>Must be a valid UUID. The <code>id</code> of an existing record in the items table.</p>
-        </div>
-                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
-                <span>Example:</span> <!-- <span> important for spacing -->
-                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
-                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        66529e01-d113-3473-8d6f-9e11e09332ea
-                    </div>
-                </div>
-            </div>
-            </div>
-</div>
-
-            </div>
-    <div class="expandable sl-text-sm sl-border-l sl-ml-px">
-        <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
-    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
-    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
-        <div class="sl-flex sl-items-center sl-max-w-full">
-                                        <div class="sl-flex sl-items-baseline sl-text-base">
-                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Company</div>
-                                            <span class="sl-truncate sl-text-muted">string</span>
-                                    </div>
-                                            <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
-                        <div class="sl-flex sl-items-center">
-                                                            <span class="sl-ml-2 sl-text-warning">required</span>
-                                                                                </div>
-                                        </div>
-                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
-            <p>Must be a valid UUID. The <code>id</code> of an existing record in the companies table.</p>
-        </div>
-                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
-                <span>Example:</span> <!-- <span> important for spacing -->
-                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
-                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        fa010f60-df29-3f05-8bc7-bed48f550d13
-                    </div>
-                </div>
-            </div>
-            </div>
-</div>
-
-            </div>
-    <div class="expandable sl-text-sm sl-border-l sl-ml-px">
-        <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
-    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
-    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
-        <div class="sl-flex sl-items-center sl-max-w-full">
-                                        <div class="sl-flex sl-items-baseline sl-text-base">
-                    <div class="sl-font-mono sl-font-semibold sl-mr-2">ItemType</div>
-                                            <span class="sl-truncate sl-text-muted">string</span>
-                                    </div>
-                                            <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
-                        <div class="sl-flex sl-items-center">
-                                                            <span class="sl-ml-2 sl-text-warning">required</span>
-                                                                                </div>
-                                        </div>
-                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
-            <p>Must be a valid UUID. The <code>id</code> of an existing record in the item_types table.</p>
-        </div>
-                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
-                <span>Example:</span> <!-- <span> important for spacing -->
-                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
-                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        57357f37-0ea3-38e5-8a6c-9de9d06e75fd
-                    </div>
-                </div>
-            </div>
-            </div>
-</div>
-
-            </div>
-    <div class="expandable sl-text-sm sl-border-l sl-ml-px">
-        <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
-    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
-    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
-        <div class="sl-flex sl-items-center sl-max-w-full">
-                                        <div class="sl-flex sl-items-baseline sl-text-base">
-                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Label</div>
-                                            <span class="sl-truncate sl-text-muted">string</span>
-                                    </div>
-                                            <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
-                        <div class="sl-flex sl-items-center">
-                                                            <span class="sl-ml-2 sl-text-warning">required</span>
-                                                                                </div>
-                                        </div>
-                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
-            <p>Must not be greater than 255 characters.</p>
-        </div>
-                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
-                <span>Example:</span> <!-- <span> important for spacing -->
-                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
-                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        fuudtdsufvyvddqamniih
-                    </div>
-                </div>
-            </div>
-            </div>
-</div>
-
-            </div>
-    <div class="expandable sl-text-sm sl-border-l sl-ml-px">
-        <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
-    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
-    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
-        <div class="sl-flex sl-items-center sl-max-w-full">
-                                        <div class="sl-flex sl-items-baseline sl-text-base">
-                    <div class="sl-font-mono sl-font-semibold sl-mr-2">ItemGroup</div>
-                                            <span class="sl-truncate sl-text-muted">string</span>
-                                    </div>
-                                            <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
-                        <div class="sl-flex sl-items-center">
-                                                            <span class="sl-ml-2 sl-text-warning">required</span>
-                                                                                </div>
-                                        </div>
-                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
-            <p>Must be a valid UUID. The <code>id</code> of an existing record in the item_groups table.</p>
-        </div>
-                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
-                <span>Example:</span> <!-- <span> important for spacing -->
-                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
-                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        957dba86-4fef-3375-bedd-10e12a33d85e
-                    </div>
-                </div>
-            </div>
-            </div>
-</div>
-
-            </div>
-    <div class="expandable sl-text-sm sl-border-l sl-ml-px">
-        <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
-    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
-    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
-        <div class="sl-flex sl-items-center sl-max-w-full">
-                                        <div class="sl-flex sl-items-baseline sl-text-base">
-                    <div class="sl-font-mono sl-font-semibold sl-mr-2">ItemAccountGroup</div>
-                                            <span class="sl-truncate sl-text-muted">string</span>
-                                    </div>
-                                            <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
-                        <div class="sl-flex sl-items-center">
-                                                            <span class="sl-ml-2 sl-text-warning">required</span>
-                                                                                </div>
-                                        </div>
-                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
-            <p>Must be a valid UUID. The <code>id</code> of an existing record in the item_account_groups table.</p>
-        </div>
-                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
-                <span>Example:</span> <!-- <span> important for spacing -->
-                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
-                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        5d4370ba-0848-31e1-880d-fcbc1539481f
-                    </div>
-                </div>
-            </div>
-            </div>
-</div>
-
-            </div>
-    <div class="expandable sl-text-sm sl-border-l sl-ml-px">
-        <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
-    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
-    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
-        <div class="sl-flex sl-items-center sl-max-w-full">
-                                        <div class="sl-flex sl-items-baseline sl-text-base">
-                    <div class="sl-font-mono sl-font-semibold sl-mr-2">ItemUnit</div>
-                                            <span class="sl-truncate sl-text-muted">string</span>
-                                    </div>
-                                            <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
-                        <div class="sl-flex sl-items-center">
-                                                            <span class="sl-ml-2 sl-text-warning">required</span>
-                                                                                </div>
-                                        </div>
-                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
-            <p>Must be a valid UUID. The <code>id</code> of an existing record in the item_units table.</p>
-        </div>
-                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
-                <span>Example:</span> <!-- <span> important for spacing -->
-                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
-                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        b2c92958-c8e7-31ab-9c7f-a3df5ef452a9
-                    </div>
-                </div>
-            </div>
-            </div>
-</div>
-
-            </div>
-    <div class="expandable sl-text-sm sl-border-l sl-ml-px">
-        <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
-    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
-    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
-        <div class="sl-flex sl-items-center sl-max-w-full">
-                                        <div class="sl-flex sl-items-baseline sl-text-base">
-                    <div class="sl-font-mono sl-font-semibold sl-mr-2">IsActive</div>
-                                            <span class="sl-truncate sl-text-muted">boolean</span>
-                                    </div>
-                                            <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
-                        <div class="sl-flex sl-items-center">
-                                                            <span class="sl-ml-2 sl-text-warning">required</span>
-                                                                                </div>
-                                        </div>
-                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
-                <span>Example:</span> <!-- <span> important for spacing -->
-                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
-                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
                         true
                     </div>
                 </div>
@@ -2687,12 +2626,11 @@ fetch(url, {
                                      style="font-family: var(--font-code); font-size: 12px; line-height: var(--lh-code);"
                                 >{
     "Oid": "66529e01-d113-3473-8d6f-9e11e09332ea",
-    "Company": "fa010f60-df29-3f05-8bc7-bed48f550d13",
-    "ItemType": "57357f37-0ea3-38e5-8a6c-9de9d06e75fd",
-    "Label": "fuudtdsufvyvddqamniih",
-    "ItemGroup": "957dba86-4fef-3375-bedd-10e12a33d85e",
-    "ItemAccountGroup": "5d4370ba-0848-31e1-880d-fcbc1539481f",
-    "ItemUnit": "b2c92958-c8e7-31ab-9c7f-a3df5ef452a9",
+    "ItemType": "fa010f60-df29-3f05-8bc7-bed48f550d13",
+    "Label": "opfuudtdsufvyvddqamni",
+    "ItemGroup": "d63469cd-6701-3555-a16b-fc9764100c9a",
+    "ItemAccountGroup": "957dba86-4fef-3375-bedd-10e12a33d85e",
+    "ItemUnit": "5d4370ba-0848-31e1-880d-fcbc1539481f",
     "IsActive": true
 }</div>
                             </div>
@@ -2791,12 +2729,11 @@ You can check the Dev Tools console for debugging information.</p>
     --header "Accept: application/json" \
     --data "{
     \"Oid\": \"66529e01-d113-3473-8d6f-9e11e09332ea\",
-    \"Company\": \"fa010f60-df29-3f05-8bc7-bed48f550d13\",
-    \"ItemType\": \"57357f37-0ea3-38e5-8a6c-9de9d06e75fd\",
-    \"Label\": \"fuudtdsufvyvddqamniih\",
-    \"ItemGroup\": \"957dba86-4fef-3375-bedd-10e12a33d85e\",
-    \"ItemAccountGroup\": \"5d4370ba-0848-31e1-880d-fcbc1539481f\",
-    \"ItemUnit\": \"b2c92958-c8e7-31ab-9c7f-a3df5ef452a9\",
+    \"ItemType\": \"fa010f60-df29-3f05-8bc7-bed48f550d13\",
+    \"Label\": \"opfuudtdsufvyvddqamni\",
+    \"ItemGroup\": \"d63469cd-6701-3555-a16b-fc9764100c9a\",
+    \"ItemAccountGroup\": \"957dba86-4fef-3375-bedd-10e12a33d85e\",
+    \"ItemUnit\": \"5d4370ba-0848-31e1-880d-fcbc1539481f\",
     \"IsActive\": true
 }"
 </code></pre>                                        </div>
@@ -2818,12 +2755,11 @@ const headers = {
 
 let body = {
     "Oid": "66529e01-d113-3473-8d6f-9e11e09332ea",
-    "Company": "fa010f60-df29-3f05-8bc7-bed48f550d13",
-    "ItemType": "57357f37-0ea3-38e5-8a6c-9de9d06e75fd",
-    "Label": "fuudtdsufvyvddqamniih",
-    "ItemGroup": "957dba86-4fef-3375-bedd-10e12a33d85e",
-    "ItemAccountGroup": "5d4370ba-0848-31e1-880d-fcbc1539481f",
-    "ItemUnit": "b2c92958-c8e7-31ab-9c7f-a3df5ef452a9",
+    "ItemType": "fa010f60-df29-3f05-8bc7-bed48f550d13",
+    "Label": "opfuudtdsufvyvddqamni",
+    "ItemGroup": "d63469cd-6701-3555-a16b-fc9764100c9a",
+    "ItemAccountGroup": "957dba86-4fef-3375-bedd-10e12a33d85e",
+    "ItemUnit": "5d4370ba-0848-31e1-880d-fcbc1539481f",
     "IsActive": true
 };
 
@@ -3728,35 +3664,6 @@ content-type: application/json</code></pre>
     <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
         <div class="sl-flex sl-items-center sl-max-w-full">
                                         <div class="sl-flex sl-items-baseline sl-text-base">
-                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Company</div>
-                                            <span class="sl-truncate sl-text-muted">string</span>
-                                    </div>
-                                            <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
-                        <div class="sl-flex sl-items-center">
-                                                            <span class="sl-ml-2 sl-text-warning">required</span>
-                                                                                </div>
-                                        </div>
-                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
-            <p>Must be a valid UUID. The <code>id</code> of an existing record in the companies table.</p>
-        </div>
-                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
-                <span>Example:</span> <!-- <span> important for spacing -->
-                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
-                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        66529e01-d113-3473-8d6f-9e11e09332ea
-                    </div>
-                </div>
-            </div>
-            </div>
-</div>
-
-            </div>
-    <div class="expandable sl-text-sm sl-border-l sl-ml-px">
-        <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
-    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
-    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
-        <div class="sl-flex sl-items-center sl-max-w-full">
-                                        <div class="sl-flex sl-items-baseline sl-text-base">
                     <div class="sl-font-mono sl-font-semibold sl-mr-2">Date</div>
                                             <span class="sl-truncate sl-text-muted">string</span>
                                     </div>
@@ -3772,7 +3679,7 @@ content-type: application/json</code></pre>
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        2026-04-23
+                        2026-04-24
                     </div>
                 </div>
             </div>
@@ -3801,7 +3708,7 @@ content-type: application/json</code></pre>
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        fa010f60-df29-3f05-8bc7-bed48f550d13
+                        66529e01-d113-3473-8d6f-9e11e09332ea
                     </div>
                 </div>
             </div>
@@ -3953,9 +3860,8 @@ content-type: application/json</code></pre>
                                      id="json-body-POSTadmin-api-v1-stockissue"
                                      style="font-family: var(--font-code); font-size: 12px; line-height: var(--lh-code);"
                                 >{
-    "Company": "66529e01-d113-3473-8d6f-9e11e09332ea",
-    "Date": "2026-04-23",
-    "Account": "fa010f60-df29-3f05-8bc7-bed48f550d13",
+    "Date": "2026-04-24",
+    "Account": "66529e01-d113-3473-8d6f-9e11e09332ea",
     "Note": "consequatur"
 }</div>
                             </div>
@@ -4053,9 +3959,8 @@ You can check the Dev Tools console for debugging information.</p>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"Company\": \"66529e01-d113-3473-8d6f-9e11e09332ea\",
-    \"Date\": \"2026-04-23\",
-    \"Account\": \"fa010f60-df29-3f05-8bc7-bed48f550d13\",
+    \"Date\": \"2026-04-24\",
+    \"Account\": \"66529e01-d113-3473-8d6f-9e11e09332ea\",
     \"Note\": \"consequatur\"
 }"
 </code></pre>                                        </div>
@@ -4076,9 +3981,8 @@ const headers = {
 };
 
 let body = {
-    "Company": "66529e01-d113-3473-8d6f-9e11e09332ea",
-    "Date": "2026-04-23",
-    "Account": "fa010f60-df29-3f05-8bc7-bed48f550d13",
+    "Date": "2026-04-24",
+    "Account": "66529e01-d113-3473-8d6f-9e11e09332ea",
     "Note": "consequatur"
 };
 
@@ -4217,7 +4121,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        consequatur
+                        DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca
                     </div>
                 </div>
             </div>
@@ -4350,7 +4254,7 @@ fetch(url, {
                                         <input aria-label="oid" name="oid"
                                                id="urlparam-GETadmin-api-v1-stockissue--oid--oid"
                                                placeholder=""
-                                               value="consequatur" data-component="url"
+                                               value="DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca" data-component="url"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
@@ -4446,7 +4350,7 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/admin/api/v1/stockissue/consequatur" \
+    --get "http://127.0.0.1:8000/admin/api/v1/stockissue/DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre>                                        </div>
@@ -4457,7 +4361,7 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/admin/api/v1/stockissue/consequatur"
+    "http://127.0.0.1:8000/admin/api/v1/stockissue/DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca"
 );
 
 const headers = {
@@ -4661,7 +4565,7 @@ content-type: application/json</code></pre>
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        consequatur
+                        DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca
                     </div>
                 </div>
             </div>
@@ -4711,35 +4615,6 @@ content-type: application/json</code></pre>
     <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
         <div class="sl-flex sl-items-center sl-max-w-full">
                                         <div class="sl-flex sl-items-baseline sl-text-base">
-                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Company</div>
-                                            <span class="sl-truncate sl-text-muted">string</span>
-                                    </div>
-                                            <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
-                        <div class="sl-flex sl-items-center">
-                                                            <span class="sl-ml-2 sl-text-warning">required</span>
-                                                                                </div>
-                                        </div>
-                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
-            <p>Must be a valid UUID. The <code>id</code> of an existing record in the companies table.</p>
-        </div>
-                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
-                <span>Example:</span> <!-- <span> important for spacing -->
-                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
-                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        fa010f60-df29-3f05-8bc7-bed48f550d13
-                    </div>
-                </div>
-            </div>
-            </div>
-</div>
-
-            </div>
-    <div class="expandable sl-text-sm sl-border-l sl-ml-px">
-        <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
-    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
-    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
-        <div class="sl-flex sl-items-center sl-max-w-full">
-                                        <div class="sl-flex sl-items-baseline sl-text-base">
                     <div class="sl-font-mono sl-font-semibold sl-mr-2">Date</div>
                                             <span class="sl-truncate sl-text-muted">string</span>
                                     </div>
@@ -4755,7 +4630,7 @@ content-type: application/json</code></pre>
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        2026-04-23
+                        2026-04-24
                     </div>
                 </div>
             </div>
@@ -4784,7 +4659,7 @@ content-type: application/json</code></pre>
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        57357f37-0ea3-38e5-8a6c-9de9d06e75fd
+                        fa010f60-df29-3f05-8bc7-bed48f550d13
                     </div>
                 </div>
             </div>
@@ -4938,7 +4813,7 @@ content-type: application/json</code></pre>
                                         <input aria-label="oid" name="oid"
                                                id="urlparam-POSTadmin-api-v1-stockissue--oid--oid"
                                                placeholder=""
-                                               value="consequatur" data-component="url"
+                                               value="DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca" data-component="url"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
@@ -4970,9 +4845,8 @@ content-type: application/json</code></pre>
                                      style="font-family: var(--font-code); font-size: 12px; line-height: var(--lh-code);"
                                 >{
     "Oid": "66529e01-d113-3473-8d6f-9e11e09332ea",
-    "Company": "fa010f60-df29-3f05-8bc7-bed48f550d13",
-    "Date": "2026-04-23",
-    "Account": "57357f37-0ea3-38e5-8a6c-9de9d06e75fd",
+    "Date": "2026-04-24",
+    "Account": "fa010f60-df29-3f05-8bc7-bed48f550d13",
     "Note": "consequatur"
 }</div>
                             </div>
@@ -5065,15 +4939,14 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-bash">curl --request POST \
-    "http://127.0.0.1:8000/admin/api/v1/stockissue/consequatur" \
+    "http://127.0.0.1:8000/admin/api/v1/stockissue/DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
     \"Oid\": \"66529e01-d113-3473-8d6f-9e11e09332ea\",
-    \"Company\": \"fa010f60-df29-3f05-8bc7-bed48f550d13\",
-    \"Date\": \"2026-04-23\",
-    \"Account\": \"57357f37-0ea3-38e5-8a6c-9de9d06e75fd\",
+    \"Date\": \"2026-04-24\",
+    \"Account\": \"fa010f60-df29-3f05-8bc7-bed48f550d13\",
     \"Note\": \"consequatur\"
 }"
 </code></pre>                                        </div>
@@ -5084,7 +4957,7 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/admin/api/v1/stockissue/consequatur"
+    "http://127.0.0.1:8000/admin/api/v1/stockissue/DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca"
 );
 
 const headers = {
@@ -5095,9 +4968,8 @@ const headers = {
 
 let body = {
     "Oid": "66529e01-d113-3473-8d6f-9e11e09332ea",
-    "Company": "fa010f60-df29-3f05-8bc7-bed48f550d13",
-    "Date": "2026-04-23",
-    "Account": "57357f37-0ea3-38e5-8a6c-9de9d06e75fd",
+    "Date": "2026-04-24",
+    "Account": "fa010f60-df29-3f05-8bc7-bed48f550d13",
     "Note": "consequatur"
 };
 
@@ -5236,7 +5108,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        consequatur
+                        DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca
                     </div>
                 </div>
             </div>
@@ -5404,7 +5276,7 @@ fetch(url, {
                                         <input aria-label="oid" name="oid"
                                                id="urlparam-DELETEadmin-api-v1-stockissue--oid--oid"
                                                placeholder=""
-                                               value="consequatur" data-component="url"
+                                               value="DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca" data-component="url"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
@@ -5527,7 +5399,7 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-bash">curl --request DELETE \
-    "http://127.0.0.1:8000/admin/api/v1/stockissue/consequatur" \
+    "http://127.0.0.1:8000/admin/api/v1/stockissue/DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -5542,7 +5414,7 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/admin/api/v1/stockissue/consequatur"
+    "http://127.0.0.1:8000/admin/api/v1/stockissue/DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca"
 );
 
 const headers = {
@@ -5690,7 +5562,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        consequatur
+                        DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca
                     </div>
                 </div>
             </div>
@@ -5823,7 +5695,7 @@ fetch(url, {
                                         <input aria-label="oid" name="oid"
                                                id="urlparam-GETadmin-api-v1-stockissue-detail--oid--oid"
                                                placeholder=""
-                                               value="consequatur" data-component="url"
+                                               value="DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca" data-component="url"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
@@ -5919,7 +5791,7 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/admin/api/v1/stockissue/detail/consequatur" \
+    --get "http://127.0.0.1:8000/admin/api/v1/stockissue/detail/DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre>                                        </div>
@@ -5930,7 +5802,7 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/admin/api/v1/stockissue/detail/consequatur"
+    "http://127.0.0.1:8000/admin/api/v1/stockissue/detail/DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca"
 );
 
 const headers = {
@@ -6612,7 +6484,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        consequatur
+                        DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca
                     </div>
                 </div>
             </div>
@@ -6857,7 +6729,7 @@ fetch(url, {
                                         <input aria-label="oid" name="oid"
                                                id="urlparam-POSTadmin-api-v1-stockissue-detail--oid--oid"
                                                placeholder=""
-                                               value="consequatur" data-component="url"
+                                               value="DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca" data-component="url"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
@@ -6983,7 +6855,7 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-bash">curl --request POST \
-    "http://127.0.0.1:8000/admin/api/v1/stockissue/detail/consequatur" \
+    "http://127.0.0.1:8000/admin/api/v1/stockissue/detail/DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -7001,7 +6873,7 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/admin/api/v1/stockissue/detail/consequatur"
+    "http://127.0.0.1:8000/admin/api/v1/stockissue/detail/DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca"
 );
 
 const headers = {
@@ -7152,7 +7024,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        consequatur
+                        DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca
                     </div>
                 </div>
             </div>
@@ -7320,7 +7192,7 @@ fetch(url, {
                                         <input aria-label="oid" name="oid"
                                                id="urlparam-DELETEadmin-api-v1-stockissue-detail--oid--oid"
                                                placeholder=""
-                                               value="consequatur" data-component="url"
+                                               value="DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca" data-component="url"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
@@ -7443,7 +7315,7 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-bash">curl --request DELETE \
-    "http://127.0.0.1:8000/admin/api/v1/stockissue/detail/consequatur" \
+    "http://127.0.0.1:8000/admin/api/v1/stockissue/detail/DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -7458,7 +7330,7 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/admin/api/v1/stockissue/detail/consequatur"
+    "http://127.0.0.1:8000/admin/api/v1/stockissue/detail/DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca"
 );
 
 const headers = {

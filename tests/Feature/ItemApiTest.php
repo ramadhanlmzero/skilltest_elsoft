@@ -2,7 +2,6 @@
 
 namespace Tests\Feature;
 
-use App\Models\CompanyModel;
 use App\Models\ItemAccountGroupModel;
 use App\Models\ItemGroupModel;
 use App\Models\ItemTypeModel;
@@ -36,11 +35,10 @@ class ItemApiTest extends TestCase
     public function test_item_create_endpoint_creates_new_item(): void
     {
         $headers = $this->authHeaders();
-        [$companyId, $itemTypeId, $itemGroupId, $itemAccountGroupId, $itemUnitId] = $this->itemMasterIds();
+        [$itemTypeId, $itemGroupId, $itemAccountGroupId, $itemUnitId] = $this->itemMasterIds();
 
         $this->withHeaders($headers)
             ->postJson('/admin/api/item', [
-                'Company' => $companyId,
                 'ItemType' => $itemTypeId,
                 'Label' => 'Item API Test',
                 'ItemGroup' => $itemGroupId,
@@ -57,10 +55,9 @@ class ItemApiTest extends TestCase
     public function test_item_save_endpoint_updates_existing_item(): void
     {
         $headers = $this->authHeaders();
-        [$companyId, $itemTypeId, $itemGroupId, $itemAccountGroupId, $itemUnitId] = $this->itemMasterIds();
+        [$itemTypeId, $itemGroupId, $itemAccountGroupId, $itemUnitId] = $this->itemMasterIds();
 
         $created = $this->withHeaders($headers)->postJson('/admin/api/item', [
-            'Company' => $companyId,
             'ItemType' => $itemTypeId,
             'Label' => 'Item Save Source',
             'ItemGroup' => $itemGroupId,
@@ -74,7 +71,6 @@ class ItemApiTest extends TestCase
         $this->withHeaders($headers)
             ->postJson('/admin/api/item/save', [
                 'Oid' => $itemOid,
-                'Company' => $companyId,
                 'ItemType' => $itemTypeId,
                 'Label' => 'Item API Test Updated',
                 'ItemGroup' => $itemGroupId,
@@ -92,10 +88,9 @@ class ItemApiTest extends TestCase
     public function test_item_delete_endpoint_removes_existing_item(): void
     {
         $headers = $this->authHeaders();
-        [$companyId, $itemTypeId, $itemGroupId, $itemAccountGroupId, $itemUnitId] = $this->itemMasterIds();
+        [$itemTypeId, $itemGroupId, $itemAccountGroupId, $itemUnitId] = $this->itemMasterIds();
 
         $created = $this->withHeaders($headers)->postJson('/admin/api/item', [
-            'Company' => $companyId,
             'ItemType' => $itemTypeId,
             'Label' => 'Item Delete Source',
             'ItemGroup' => $itemGroupId,
@@ -116,17 +111,16 @@ class ItemApiTest extends TestCase
     }
 
     /**
-     * @return array{string, string, string, string, string}
+     * @return array{string, string, string, string}
      */
     private function itemMasterIds(): array
     {
-        $companyId = (string) CompanyModel::query()->where('domain', 'admin')->value('id');
         $itemTypeId = (string) ItemTypeModel::query()->value('id');
         $itemGroupId = (string) ItemGroupModel::query()->value('id');
         $itemAccountGroupId = (string) ItemAccountGroupModel::query()->value('id');
         $itemUnitId = (string) ItemUnitModel::query()->value('id');
 
-        return [$companyId, $itemTypeId, $itemGroupId, $itemAccountGroupId, $itemUnitId];
+        return [$itemTypeId, $itemGroupId, $itemAccountGroupId, $itemUnitId];
     }
 
     /**

@@ -26,8 +26,10 @@ class ItemRepository implements ItemRepositoryInterface
 
     public function create(CreateItemRequest $request): ItemModel
     {
+        $companyId = (string) $request->user()->company_id;
+
         return ItemModel::query()->create([
-            'company_id' => (string) $request->string('Company'),
+            'company_id' => $companyId,
             'item_type_id' => (string) $request->string('ItemType'),
             'code' => (string) $request->string('Code'),
             'label' => (string) $request->string('Label'),
@@ -40,8 +42,10 @@ class ItemRepository implements ItemRepositoryInterface
 
     public function update(ItemModel $item, UpdateItemRequest $request): ItemModel
     {
+        $companyId = (string) $request->user()->company_id;
+
         $item->update([
-            'company_id' => (string) $request->string('Company'),
+            'company_id' => $companyId,
             'item_type_id' => (string) $request->string('ItemType'),
             'label' => (string) $request->string('Label'),
             'item_group_id' => (string) $request->string('ItemGroup'),

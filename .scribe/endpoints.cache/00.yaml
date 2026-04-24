@@ -172,10 +172,117 @@ endpoints:
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
-      Company:
+      ItemType:
         custom: []
-        name: Company
-        description: 'Must be a valid UUID. The <code>id</code> of an existing record in the companies table.'
+        name: ItemType
+        description: 'Must be a valid UUID. The <code>id</code> of an existing record in the item_types table.'
+        required: true
+        example: 66529e01-d113-3473-8d6f-9e11e09332ea
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      Label:
+        custom: []
+        name: Label
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: qeopfuudtdsufvyvddqam
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      ItemGroup:
+        custom: []
+        name: ItemGroup
+        description: 'Must be a valid UUID. The <code>id</code> of an existing record in the item_groups table.'
+        required: true
+        example: 1915c795-5d1c-3def-965b-5abe034dd150
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      ItemAccountGroup:
+        custom: []
+        name: ItemAccountGroup
+        description: 'Must be a valid UUID. The <code>id</code> of an existing record in the item_account_groups table.'
+        required: true
+        example: d63469cd-6701-3555-a16b-fc9764100c9a
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      ItemUnit:
+        custom: []
+        name: ItemUnit
+        description: 'Must be a valid UUID. The <code>id</code> of an existing record in the item_units table.'
+        required: true
+        example: 957dba86-4fef-3375-bedd-10e12a33d85e
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      IsActive:
+        custom: []
+        name: IsActive
+        description: ''
+        required: true
+        example: true
+        type: boolean
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      ItemType: 66529e01-d113-3473-8d6f-9e11e09332ea
+      Label: qeopfuudtdsufvyvddqam
+      ItemGroup: 1915c795-5d1c-3def-965b-5abe034dd150
+      ItemAccountGroup: d63469cd-6701-3555-a16b-fc9764100c9a
+      ItemUnit: 957dba86-4fef-3375-bedd-10e12a33d85e
+      IsActive: true
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 3V5EgbkvZcDPa166h8fd4ae'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: admin/api/item/save
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      Oid:
+        custom: []
+        name: Oid
+        description: 'Must be a valid UUID. The <code>id</code> of an existing record in the items table.'
         required: true
         example: 66529e01-d113-3473-8d6f-9e11e09332ea
         type: string
@@ -243,136 +350,6 @@ endpoints:
         name: IsActive
         description: ''
         required: true
-        example: false
-        type: boolean
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-    cleanBodyParameters:
-      Company: 66529e01-d113-3473-8d6f-9e11e09332ea
-      ItemType: fa010f60-df29-3f05-8bc7-bed48f550d13
-      Label: opfuudtdsufvyvddqamni
-      ItemGroup: d63469cd-6701-3555-a16b-fc9764100c9a
-      ItemAccountGroup: 957dba86-4fef-3375-bedd-10e12a33d85e
-      ItemUnit: 5d4370ba-0848-31e1-880d-fcbc1539481f
-      IsActive: false
-    fileParameters: []
-    responses: []
-    responseFields: []
-    auth:
-      - headers
-      - Authorization
-      - 'Bearer 3V5EgbkvZcDPa166h8fd4ae'
-    controller: null
-    method: null
-    route: null
-  -
-    custom: []
-    httpMethods:
-      - POST
-    uri: admin/api/item/save
-    metadata:
-      custom: []
-      groupName: Endpoints
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: ''
-      description: ''
-      authenticated: true
-      deprecated: false
-    headers:
-      Authorization: 'Bearer {YOUR_AUTH_KEY}'
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters:
-      Oid:
-        custom: []
-        name: Oid
-        description: 'Must be a valid UUID. The <code>id</code> of an existing record in the items table.'
-        required: true
-        example: 66529e01-d113-3473-8d6f-9e11e09332ea
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      Company:
-        custom: []
-        name: Company
-        description: 'Must be a valid UUID. The <code>id</code> of an existing record in the companies table.'
-        required: true
-        example: fa010f60-df29-3f05-8bc7-bed48f550d13
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      ItemType:
-        custom: []
-        name: ItemType
-        description: 'Must be a valid UUID. The <code>id</code> of an existing record in the item_types table.'
-        required: true
-        example: 57357f37-0ea3-38e5-8a6c-9de9d06e75fd
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      Label:
-        custom: []
-        name: Label
-        description: 'Must not be greater than 255 characters.'
-        required: true
-        example: fuudtdsufvyvddqamniih
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      ItemGroup:
-        custom: []
-        name: ItemGroup
-        description: 'Must be a valid UUID. The <code>id</code> of an existing record in the item_groups table.'
-        required: true
-        example: 957dba86-4fef-3375-bedd-10e12a33d85e
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      ItemAccountGroup:
-        custom: []
-        name: ItemAccountGroup
-        description: 'Must be a valid UUID. The <code>id</code> of an existing record in the item_account_groups table.'
-        required: true
-        example: 5d4370ba-0848-31e1-880d-fcbc1539481f
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      ItemUnit:
-        custom: []
-        name: ItemUnit
-        description: 'Must be a valid UUID. The <code>id</code> of an existing record in the item_units table.'
-        required: true
-        example: b2c92958-c8e7-31ab-9c7f-a3df5ef452a9
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      IsActive:
-        custom: []
-        name: IsActive
-        description: ''
-        required: true
         example: true
         type: boolean
         enumValues: []
@@ -381,12 +358,11 @@ endpoints:
         deprecated: false
     cleanBodyParameters:
       Oid: 66529e01-d113-3473-8d6f-9e11e09332ea
-      Company: fa010f60-df29-3f05-8bc7-bed48f550d13
-      ItemType: 57357f37-0ea3-38e5-8a6c-9de9d06e75fd
-      Label: fuudtdsufvyvddqamniih
-      ItemGroup: 957dba86-4fef-3375-bedd-10e12a33d85e
-      ItemAccountGroup: 5d4370ba-0848-31e1-880d-fcbc1539481f
-      ItemUnit: b2c92958-c8e7-31ab-9c7f-a3df5ef452a9
+      ItemType: fa010f60-df29-3f05-8bc7-bed48f550d13
+      Label: opfuudtdsufvyvddqamni
+      ItemGroup: d63469cd-6701-3555-a16b-fc9764100c9a
+      ItemAccountGroup: 957dba86-4fef-3375-bedd-10e12a33d85e
+      ItemUnit: 5d4370ba-0848-31e1-880d-fcbc1539481f
       IsActive: true
     fileParameters: []
     responses: []
@@ -512,23 +488,12 @@ endpoints:
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
-      Company:
-        custom: []
-        name: Company
-        description: 'Must be a valid UUID. The <code>id</code> of an existing record in the companies table.'
-        required: true
-        example: 66529e01-d113-3473-8d6f-9e11e09332ea
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
       Date:
         custom: []
         name: Date
         description: 'Must be a valid date in the format <code>Y-m-d</code>.'
         required: true
-        example: '2026-04-23'
+        example: '2026-04-24'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -539,7 +504,7 @@ endpoints:
         name: Account
         description: 'Must be a valid UUID. The <code>id</code> of an existing record in the accounts table.'
         required: true
-        example: fa010f60-df29-3f05-8bc7-bed48f550d13
+        example: 66529e01-d113-3473-8d6f-9e11e09332ea
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -557,9 +522,8 @@ endpoints:
         nullable: true
         deprecated: false
     cleanBodyParameters:
-      Company: 66529e01-d113-3473-8d6f-9e11e09332ea
-      Date: '2026-04-23'
-      Account: fa010f60-df29-3f05-8bc7-bed48f550d13
+      Date: '2026-04-24'
+      Account: 66529e01-d113-3473-8d6f-9e11e09332ea
       Note: consequatur
     fileParameters: []
     responses: []
@@ -596,14 +560,14 @@ endpoints:
         name: oid
         description: ''
         required: true
-        example: consequatur
+        example: DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      oid: consequatur
+      oid: DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -651,14 +615,14 @@ endpoints:
         name: oid
         description: ''
         required: true
-        example: consequatur
+        example: DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      oid: consequatur
+      oid: DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -673,23 +637,12 @@ endpoints:
         exampleWasSpecified: false
         nullable: false
         deprecated: false
-      Company:
-        custom: []
-        name: Company
-        description: 'Must be a valid UUID. The <code>id</code> of an existing record in the companies table.'
-        required: true
-        example: fa010f60-df29-3f05-8bc7-bed48f550d13
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
       Date:
         custom: []
         name: Date
         description: 'Must be a valid date in the format <code>Y-m-d</code>.'
         required: true
-        example: '2026-04-23'
+        example: '2026-04-24'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -700,7 +653,7 @@ endpoints:
         name: Account
         description: 'Must be a valid UUID. The <code>id</code> of an existing record in the accounts table.'
         required: true
-        example: 57357f37-0ea3-38e5-8a6c-9de9d06e75fd
+        example: fa010f60-df29-3f05-8bc7-bed48f550d13
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -719,9 +672,8 @@ endpoints:
         deprecated: false
     cleanBodyParameters:
       Oid: 66529e01-d113-3473-8d6f-9e11e09332ea
-      Company: fa010f60-df29-3f05-8bc7-bed48f550d13
-      Date: '2026-04-23'
-      Account: 57357f37-0ea3-38e5-8a6c-9de9d06e75fd
+      Date: '2026-04-24'
+      Account: fa010f60-df29-3f05-8bc7-bed48f550d13
       Note: consequatur
     fileParameters: []
     responses: []
@@ -758,14 +710,14 @@ endpoints:
         name: oid
         description: ''
         required: true
-        example: consequatur
+        example: DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      oid: consequatur
+      oid: DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -817,14 +769,14 @@ endpoints:
         name: oid
         description: ''
         required: true
-        example: consequatur
+        example: DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      oid: consequatur
+      oid: DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -955,14 +907,14 @@ endpoints:
         name: oid
         description: ''
         required: true
-        example: consequatur
+        example: DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      oid: consequatur
+      oid: DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -1050,14 +1002,14 @@ endpoints:
         name: oid
         description: ''
         required: true
-        example: consequatur
+        example: DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      oid: consequatur
+      oid: DDaCaCDb-DFDa-aBdf-fddc-bBaAFfedFcca
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:

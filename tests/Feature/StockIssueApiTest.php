@@ -3,7 +3,6 @@
 namespace Tests\Feature;
 
 use App\Models\AccountModel;
-use App\Models\CompanyModel;
 use App\Models\ItemAccountGroupModel;
 use App\Models\ItemGroupModel;
 use App\Models\ItemModel;
@@ -29,7 +28,9 @@ class StockIssueApiTest extends TestCase
 
     public function test_stock_issue_list_endpoint_returns_success_response(): void
     {
-        $headers = $this->authHeaders();
+        [$headers, $companyId] = $this->authContext();
+
+        $this->assertNotSame('', $companyId);
 
         $this->withHeaders($headers)
             ->getJson('/admin/api/v1/stockissue/list')
@@ -40,13 +41,11 @@ class StockIssueApiTest extends TestCase
 
     public function test_stock_issue_create_endpoint_creates_parent(): void
     {
-        $headers = $this->authHeaders();
-        $companyId = (string) CompanyModel::query()->where('domain', 'testcase')->value('id');
+        [$headers, $companyId] = $this->authContext();
         $accountId = (string) AccountModel::query()->where('company_id', $companyId)->value('id');
 
         $this->withHeaders($headers)
             ->postJson('/admin/api/v1/stockissue', [
-                'Company' => $companyId,
                 'Date' => '2023-12-28',
                 'Account' => $accountId,
                 'Note' => 'create from test',
@@ -59,8 +58,8 @@ class StockIssueApiTest extends TestCase
 
     public function test_stock_issue_get_endpoint_returns_parent_detail(): void
     {
-        $headers = $this->authHeaders();
-        $stockIssueOid = $this->createStockIssue($headers);
+        [$headers, $companyId] = $this->authContext();
+        $stockIssueOid = $this->createStockIssue($headers, $companyId);
 
         $this->withHeaders($headers)
             ->getJson('/admin/api/v1/stockissue/'.$stockIssueOid)
@@ -71,14 +70,12 @@ class StockIssueApiTest extends TestCase
 
     public function test_stock_issue_save_endpoint_updates_parent(): void
     {
-        $headers = $this->authHeaders();
-        $stockIssueOid = $this->createStockIssue($headers);
-        $companyId = (string) CompanyModel::query()->where('domain', 'testcase')->value('id');
+        [$headers, $companyId] = $this->authContext();
+        $stockIssueOid = $this->createStockIssue($headers, $companyId);
         $accountId = (string) AccountModel::query()->where('company_id', $companyId)->value('id');
 
         $this->withHeaders($headers)
             ->postJson('/admin/api/v1/stockissue/'.$stockIssueOid, [
-                'Company' => $companyId,
                 'Date' => '2023-12-29',
                 'Account' => $accountId,
                 'Note' => 'updated from test',
@@ -91,8 +88,8 @@ class StockIssueApiTest extends TestCase
 
     public function test_stock_issue_delete_endpoint_removes_parent(): void
     {
-        $headers = $this->authHeaders();
-        $stockIssueOid = $this->createStockIssue($headers);
+        [$headers, $companyId] = $this->authContext();
+        $stockIssueOid = $this->createStockIssue($headers, $companyId);
 
         $this->withHeaders($headers)
             ->deleteJson('/admin/api/v1/stockissue/'.$stockIssueOid)
@@ -103,9 +100,8 @@ class StockIssueApiTest extends TestCase
 
     public function test_stock_issue_detail_create_endpoint_creates_detail(): void
     {
-        $headers = $this->authHeaders();
-        $stockIssueOid = $this->createStockIssue($headers);
-        $companyId = (string) CompanyModel::query()->where('domain', 'testcase')->value('id');
+        [$headers, $companyId] = $this->authContext();
+        $stockIssueOid = $this->createStockIssue($headers, $companyId);
         $item = $this->createItemForDetail($companyId);
 
         $this->withHeaders($headers)
@@ -122,9 +118,8 @@ class StockIssueApiTest extends TestCase
 
     public function test_stock_issue_detail_get_endpoint_returns_detail_data(): void
     {
-        $headers = $this->authHeaders();
-        $stockIssueOid = $this->createStockIssue($headers);
-        $companyId = (string) CompanyModel::query()->where('domain', 'testcase')->value('id');
+        [$headers, $companyId] = $this->authContext();
+        $stockIssueOid = $this->createStockIssue($headers, $companyId);
         $item = $this->createItemForDetail($companyId);
         $detailOid = $this->createStockIssueDetail($headers, $stockIssueOid, (string) $item->id);
 
@@ -137,9 +132,8 @@ class StockIssueApiTest extends TestCase
 
     public function test_stock_issue_detail_save_endpoint_updates_detail(): void
     {
-        $headers = $this->authHeaders();
-        $stockIssueOid = $this->createStockIssue($headers);
-        $companyId = (string) CompanyModel::query()->where('domain', 'testcase')->value('id');
+        [$headers, $companyId] = $this->authContext();
+        $stockIssueOid = $this->createStockIssue($headers, $companyId);
         $item = $this->createItemForDetail($companyId);
         $detailOid = $this->createStockIssueDetail($headers, $stockIssueOid, (string) $item->id);
 
@@ -159,9 +153,8 @@ class StockIssueApiTest extends TestCase
 
     public function test_stock_issue_detail_delete_endpoint_removes_detail(): void
     {
-        $headers = $this->authHeaders();
-        $stockIssueOid = $this->createStockIssue($headers);
-        $companyId = (string) CompanyModel::query()->where('domain', 'testcase')->value('id');
+        [$headers, $companyId] = $this->authContext();
+        $stockIssueOid = $this->createStockIssue($headers, $companyId);
         $item = $this->createItemForDetail($companyId);
         $detailOid = $this->createStockIssueDetail($headers, $stockIssueOid, (string) $item->id);
 
@@ -175,34 +168,36 @@ class StockIssueApiTest extends TestCase
     }
 
     /**
-     * @return array<string, string>
+     * @return array{0: array<string, string>, 1: string}
      */
-    private function authHeaders(): array
+    private function authContext(): array
     {
         $signin = $this->postJson('/portal/api/auth/signin', [
-            'domain' => 'admin',
-            'username' => 'admin',
-            'password' => 'admin123',
+            'domain' => 'testcase',
+            'username' => 'testcase',
+            'password' => 'testcase123',
         ]);
 
         $token = (string) $signin->json('data.Token');
+        $companyId = (string) $signin->json('data.Company');
 
         return [
-            'Authorization' => 'Bearer '.$token,
-            'Accept' => 'application/json',
+            [
+                'Authorization' => 'Bearer '.$token,
+                'Accept' => 'application/json',
+            ],
+            $companyId,
         ];
     }
 
     /**
      * @param  array<string, string>  $headers
      */
-    private function createStockIssue(array $headers): string
+    private function createStockIssue(array $headers, string $companyId): string
     {
-        $companyId = (string) CompanyModel::query()->where('domain', 'testcase')->value('id');
         $accountId = (string) AccountModel::query()->where('company_id', $companyId)->value('id');
 
         $response = $this->withHeaders($headers)->postJson('/admin/api/v1/stockissue', [
-            'Company' => $companyId,
             'Date' => '2023-12-28',
             'Account' => $accountId,
             'Note' => 'create from test',

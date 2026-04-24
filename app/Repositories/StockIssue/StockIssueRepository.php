@@ -8,7 +8,6 @@ use App\Http\Requests\StockIssue\CreateStockIssueRequest;
 use App\Http\Requests\StockIssue\UpdateStockIssueDetailRequest as UpdateDetailRequest;
 use App\Http\Requests\StockIssue\UpdateStockIssueRequest;
 use App\Models\AccountModel;
-use App\Models\CompanyModel;
 use App\Models\ItemModel;
 use App\Models\StockIssueDetailModel;
 use App\Models\StockIssueModel;
@@ -48,13 +47,15 @@ class StockIssueRepository implements StockIssueRepositoryInterface
 
     public function create(CreateStockIssueRequest $request, array $status): StockIssueModel
     {
-        $companyId = (string) $request->string('Company');
+        $companyId = (string) $request->user()->company_id;
         $accountId = (string) $request->string('Account');
-        $company = CompanyModel::query()->find($companyId);
-        $account = AccountModel::query()->find($accountId);
+        $account = AccountModel::query()
+            ->whereKey($accountId)
+            ->where('company_id', $companyId)
+            ->first();
 
-        if (! $company || ! $account) {
-            throw new ModelNotFoundException('Company or account not found');
+        if (! $account) {
+            throw new ModelNotFoundException('Account not found for current user company');
         }
 
         $stockIssue = StockIssueModel::query()->create([
@@ -71,13 +72,15 @@ class StockIssueRepository implements StockIssueRepositoryInterface
 
     public function update(StockIssueModel $stockIssue, UpdateStockIssueRequest $request): StockIssueModel
     {
-        $companyId = (string) $request->string('Company');
+        $companyId = (string) $request->user()->company_id;
         $accountId = (string) $request->string('Account');
-        $company = CompanyModel::query()->find($companyId);
-        $account = AccountModel::query()->find($accountId);
+        $account = AccountModel::query()
+            ->whereKey($accountId)
+            ->where('company_id', $companyId)
+            ->first();
 
-        if (! $company || ! $account) {
-            throw new ModelNotFoundException('Company or account not found');
+        if (! $account) {
+            throw new ModelNotFoundException('Account not found for current user company');
         }
 
         $stockIssue->update([
